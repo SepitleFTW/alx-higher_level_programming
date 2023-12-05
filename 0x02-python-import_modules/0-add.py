@@ -1,14 +1,9 @@
 #!/usr/bin/python3
 
-def add(a, b):
+if__name=="__main__":
+        ""Print the sum of 1 and 2""
+        from add_0 import add
 
-# Assigning values to variables
-a = 1
-b = 2
-
-# Importing the add function from add_0.py
-from add_0 import add
-
-# Printing the result using string formatting
-print("{} + {} = {}".format(a, b, add(a, b)))
-
+        a = 1
+        b = 2
+        print("{} + {} = {}".format(a, b add(a, b)))
