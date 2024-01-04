@@ -1,11 +1,15 @@
-#!/usr/bin/python
-""" a class for a rect"""
+#!/usr/bin/python3
+"""
+This module defines the a Rectangle Object.
+"""
+
 
 class Rectangle:
-    """rect object wwith getter and setter """
+    """Retangle object with getter and setters
+    """
     def __init__(self, width=0, height=0):
-        self.width = width
         self.height = height
+        self.width = width
 
     @property
     def width(self):
@@ -14,9 +18,9 @@ class Rectangle:
     @width.setter
     def width(self, value):
         if not isinstance(value, int):
-            raise TypeError("width must be an int")
+            raise TypeError('width must be an integer')
         elif value < 0:
-            raise ValueError("width must be >= 0")
+            raise ValueError('width must be >= 0')
         self.__width = value
 
     @property
@@ -24,9 +28,9 @@ class Rectangle:
         return self.__height
 
     @height.setter
-    def height(self,value):
+    def height(self, value):
         if not isinstance(value, int):
-            raise TypeError("Height must be an int")
+            raise TypeError('height must be an integer')
         elif value < 0:
-            raise ValueError("height must be >= 0")
+            raise ValueError('height must be >= 0')
         self.__height = value
