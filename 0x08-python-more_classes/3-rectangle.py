@@ -47,7 +47,7 @@ class Rectangle:
         """calc perm of rect"""
         if self.height == 0 or self.width == 0:
             return 0
-        return (self.width + self.height) * 2
+            return (self.width + self.height) * 2
 
     def __str__(self):
         """print rect using #"""
