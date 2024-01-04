@@ -1,58 +1,65 @@
 #!/usr/bin/python3
-"""Create a Rectangle class."""
-
+"""class for rect
+"""
 
 class Rectangle:
-    """Definition a class rectangle."""
+    """init rect"""
 
     def __init__(self, width=0, height=0):
-        """Initializing Rectangle.
-        """
+        """init rect values"""
+
         self.width = width
         self.height = height
 
     @property
     def width(self):
-        """Get/set the width of the rectangle."""
+        """def width"""
+
         return self.__width
 
     @width.setter
     def width(self, value):
-        if not type(int):
-            raise TypeError("width must be an integer")
+        if not isinstance(value, int):
+            raise TypeError("width must be an int")
         if value < 0:
             raise ValueError("width must be >= 0")
         self.__width = value
 
     @property
     def height(self):
-        """Get/set the height of the rectangle."""
+        """def height"""
+
         return self.__height
 
     @height.setter
     def height(self, value):
-        if not type(int):
-            raise TypeError("height must be an integer")
+        if not isinstance(value, int):
+            raise TypeError("height must be an int")
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
 
     def area(self):
-        """Calculate the area of the rectangle."""
+        """define area"""
+
         return self.width * self.height
 
     def perimeter(self):
-        """Calculate the perimeter of the rectangle."""
-        if self.width == 0 or self.height == 0:
+        """define perim"""
+
+        if self.height == 0 or self.width == 0:
             return 0
-            return (self.width + self.height) * 2
+            return (self.height + self.width) * 2
 
     def __str__(self):
-        """Print the rectangle."""
+        """print the rect using #"""
+
         if self.width == 0 or self.height == 0:
             return ""
+
         return ((("#" * self.width) + "\n") * self.height)[:-1]
 
     def __repr__(self):
-        """Print the rectangle using eval."""
+        """ return string eval"""
+
         return "Rectangle({}, {})".format(self.width, self.height)
