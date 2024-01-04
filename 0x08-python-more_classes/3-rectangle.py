@@ -9,7 +9,7 @@ class Rectangle:
 
     def __init__(self, width=0, height=0):
         """init rect"""
-        
+
         self.width = width
         self.height = height
 
@@ -47,7 +47,7 @@ class Rectangle:
         """calc perm of rect"""
         if self.height == 0 or self.width == 0:
             return 0
-            return (self.width + self.height) * 2
+        return (self.width + self.height) * 2
 
     def __str__(self):
         """print rect using #"""
