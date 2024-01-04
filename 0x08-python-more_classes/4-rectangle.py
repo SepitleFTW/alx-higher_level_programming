@@ -60,6 +60,5 @@ class Rectangle:
 
     def __repr__(self):
         """ return string eval"""
-        rect = "Rectangle(" + str(self.__width)
-        rect += ", " + str(self.__height) + ")"
-        return (rect)
+
+    return "Rectangle({}, {})".format(self.width, self.height)
