@@ -1,6 +1,8 @@
 #!/usr/bin/python3
+"""a square printing funct"""
 
 def print_square(size):
+    """prints squares using #s """
 
     if not isinstance(size, int):
         raise TypeError("size must be an integer")
