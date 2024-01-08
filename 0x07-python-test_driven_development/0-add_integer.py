@@ -1,7 +1,8 @@
 #!/usr/bin/python3
+"""module for 0-add_integer"""
 
 def add_integer(a, b=98):
-
+    """ adds 2 numbers """
     if type(a) != int:
         raise TypeError("a must be an integer")
 
