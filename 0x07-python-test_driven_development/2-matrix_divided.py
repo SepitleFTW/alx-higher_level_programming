@@ -1,6 +1,10 @@
 #!/usr/bin/python3
+""" dividing matrices
+"""
 
 def matrix_divided(matrix, div):
+    """ function for le matrix
+    """
 
     if not isinstance(matrix, list) or len(matrix) == 0 or not matrix[0]:
         raise TypeError("matrix must be a matrix (list of lists) " +
