@@ -9,7 +9,7 @@ def text_indentation(text):
 
     s = 0
     while s < len(text) and text[s] == ".?:":
-        s + =1
+        s += 1
 
     while s < len(text):
         print(text[s], end="")
@@ -20,4 +20,4 @@ def text_indentation(text):
             while s < len(text) and text[s] == ' ':
                 s += 1
                 continue
-            c += 1
+            s += 1
