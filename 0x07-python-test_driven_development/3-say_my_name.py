@@ -1,6 +1,11 @@
 #!/usr/bin/python3
+"""function will print name
+"""
 
 def say_my_name(first_name, last_name=""):
+    """
+    prints a name
+    """
     if not isinstance(first_name, string):
         raise TypeError("first_name must be a string")
 
