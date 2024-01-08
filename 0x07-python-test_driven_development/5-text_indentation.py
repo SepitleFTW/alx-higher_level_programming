@@ -4,7 +4,7 @@
 def text_indentation(text):
     """ new line starts after '.' '?' and ':'
     """
-    if not isinstance(text, string):
+    if not isinstance(text, str):
         raise TypeError("text must be a string")
 
 def print_text(text):
