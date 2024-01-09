@@ -10,9 +10,7 @@ class BaseGeometry:
 
     def integer_validator(self, name, value):
         """init and set values"""
-        self.name = name
-        self.value = value
-
+ 
         if not isinstance(value, int):
             raise("<name> must be an integer")
 
