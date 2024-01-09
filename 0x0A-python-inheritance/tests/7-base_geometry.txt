@@ -1,9 +1,32 @@
-#!/usr/bin/python3
-BaseGeometry = __import__('6-base_geometry').BaseGeometry
+# Import the unittest module and the base geometry class
+import unittest
+from basegeometry import BaseGeometry
 
-bg = BaseGeometry()
+# Define a test case class that inherits from unittest.TestCase
+class TestBaseGeometry(unittest.TestCase):
 
-try:
-    print(bg.area())
-except Exception as e:
-    print("[{}] {}".format(e.__class__.__name__, e))
+    # Define a test method for the area method
+    def test_area(self):
+        # Create an instance of the base geometry class
+        bg = BaseGeometry()
+        # Assert that calling the area method raises an exception
+        self.assertRaises(Exception, bg.area)
+
+    # Define a test method for the integer validator method
+    def test_integer_validator(self):
+        # Create an instance of the base geometry class
+        bg = BaseGeometry()
+        # Assert that calling the integer validator method with a valid name and value does not raise an exception
+        self.assertIsNone(bg.integer_validator("width", 10))
+        # Assert that calling the integer validator method with an invalid name raises a type error
+        self.assertRaises(TypeError, bg.integer_validator, 10, 10)
+        # Assert that calling the integer validator method with an invalid value raises a type error
+        self.assertRaises(TypeError, bg.integer_validator, "width", "10")
+        # Assert that calling the integer validator method with a negative value raises a value error
+        self.assertRaises(ValueError, bg.integer_validator, "width", -10)
+        # Assert that calling the integer validator method with a zero value raises a value error
+        self.assertRaises(ValueError, bg.integer_validator, "width", 0)
+
+# Run the test case if the file is executed as a script
+if __name__ == "__main__":
+    unittest.main()
