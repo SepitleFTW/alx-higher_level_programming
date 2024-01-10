@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-""" a function writing string to utf8 and
-returns chars when written"""
+""" write text to file"""
+
 
 def write_file(filename="", text=""):
     """ write text to file"""
