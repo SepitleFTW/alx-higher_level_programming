@@ -4,5 +4,6 @@
 
 def to_json_string(my_obj):
     """Returns a JSON string representation of an object."""
+    with open(filename, "w", encoding="utf-8") as f:
 
-    return json.dumps(my_obj)
+        return json.dumps(my_obj)
