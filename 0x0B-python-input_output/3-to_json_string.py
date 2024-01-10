@@ -1,9 +1,8 @@
 #!/usr/bin/python3
 """a func that returns JSON repr of a string"""
-
+import json
 
 def to_json_string(my_obj):
     """Returns a JSON string representation of an object."""
-    with open(filename, "w", encoding="utf-8") as f:
-
-        return json.dumps(my_obj)
+    json_str = json.dumps(my_obj)
+        return json_str
