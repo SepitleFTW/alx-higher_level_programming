@@ -38,3 +38,4 @@ except KeyboardInterrupt:
     for status_code in sorted(status_counts.keys()):
         count = status_counts[status_code]
         print(status_code + ":", count)
+
