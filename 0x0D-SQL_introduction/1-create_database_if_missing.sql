@@ -1,2 +1,2 @@
--- creating a new database in my server
+-- Creating a new database in my server.
 CREATE DATABASE IF NOT EXISTS "hbtn_0c_0";
