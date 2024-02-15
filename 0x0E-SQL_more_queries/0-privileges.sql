@@ -1,4 +1,4 @@
--- script that grants privileges
+-- script that grants privileges.
 -- of users_0d_1 and 2.
 SELECT *
 FROM mysql.user
