@@ -1,4 +1,4 @@
--- shows 3 cities with highest avg Temps
+-- shows 3 cities with highest avg Temps.
 SELECT `city`, AVG(`value`) AS `avg_temp`
 FROM `temperatures`
 WHERE `month` = 7 OR `month` = 8
