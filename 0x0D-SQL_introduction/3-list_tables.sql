@@ -1,2 +1,2 @@
---Write a script that lists all database
+-- Write a script that lists all database
 SHOW TABLES;
