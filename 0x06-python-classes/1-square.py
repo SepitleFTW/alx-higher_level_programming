@@ -3,6 +3,7 @@
 a class square that defines a square
 """
 
+
 class Square:
     """
     a class square that defines a square
