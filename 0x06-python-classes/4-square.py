@@ -18,4 +18,4 @@ class Square:
 
     @property
     def size(self, value):
-        pass
+        self.value = value
