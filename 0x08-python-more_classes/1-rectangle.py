@@ -43,9 +43,9 @@ class Rectangle:
 
         """setter for the height
         """
-        if not isinstance(height, int):
+        if not isinstance(value, int):
             raise TypeError("height must be an integer")
 
-        if height < 0:
+        if value < 0:
             raise ValueError("height must be >= 0")
         return self.__height
