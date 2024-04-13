@@ -28,14 +28,13 @@ class Rectangle:
         if value < 0:
             raise ValueError("width must be >= 0")
 
-        self.__width
+        self.__width = value
 
     @property
     def height(self):
         """property seeter for height
         """
-        return self.__height = value
-
+        return self.__height 
     @height.setter
     def height(self, value):
         """setter for the height
