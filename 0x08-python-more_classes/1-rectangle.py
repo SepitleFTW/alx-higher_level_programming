@@ -22,10 +22,10 @@ class Rectangle:
     def width(self, value):
         """setter for the width
         """
-        if not isinstance(width, int):
+        if not isinstance(value, int):
             raise TypeError("width must be an integer")
 
-        if width < 0:
+        if value < 0:
             raise ValueError("width must be >= 0")
 
         return self.__width
