@@ -34,7 +34,8 @@ class Rectangle:
     def height(self):
         """property seeter for height
         """
-        return self.__height 
+        return self.__height
+
     @height.setter
     def height(self, value):
         """setter for the height
