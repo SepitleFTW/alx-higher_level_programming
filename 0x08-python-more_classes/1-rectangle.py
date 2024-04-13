@@ -34,7 +34,7 @@ class Rectangle:
     def height(self):
         """property seeter for height
         """
-        return self.__height
+        return self.__height = value
 
     @height.setter
     def height(self, value):
@@ -45,4 +45,4 @@ class Rectangle:
 
         if value < 0:
             raise ValueError("height must be >= 0")
-        return self.__height
+        return self.__height = value
