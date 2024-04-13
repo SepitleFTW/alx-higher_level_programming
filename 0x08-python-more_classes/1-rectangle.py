@@ -2,6 +2,7 @@
 """rectangle class that will define a rectangle
 """
 
+
 class Rectangle:
     """Rect angle class
     """
@@ -48,7 +49,3 @@ class Rectangle:
         if height < 0:
             raise ValueError("height must be >= 0")
         return self.__height
-
-
-
-
